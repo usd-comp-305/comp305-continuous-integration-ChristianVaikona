@@ -30,7 +30,7 @@ public class BankAccount {
     }
 
     public boolean isAccountType(String type) {
-        return this.accountType == type;
+        return this.accountType.equals(type);
     }
 
     public double getBalance() {
