@@ -5,9 +5,9 @@ import java.util.List;
 
 public class BankAccount {
     private double balance;
-    private String accountHolder;
-    private String accountType; // e.g., "SAVINGS" or "CHECKING"
-    private List<String> history;
+    private final String accountHolder;
+    private final String accountType; // e.g., "SAVINGS" or "CHECKING"
+    private final List<String> history;
 
     public BankAccount(String name, String type, double initialDeposit) {
         this.accountHolder = name;
